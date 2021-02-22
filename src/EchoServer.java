@@ -13,7 +13,7 @@ public class EchoServer {
             System.out.println("Клиент подключился");
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
-            
+
             while (true) {
                 String str = in.readUTF();
                 if (str.equals("/end")) {
